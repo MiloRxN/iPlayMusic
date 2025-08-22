@@ -4,7 +4,7 @@ import React from "react";
 export default function GradientIcon({ children, isActive = false, ...props }) {
   const gradientId = React.useId();
   
-  const isDark = document.documentElement.classList.contains('dark') ? true : false
+  
 
   return (
     <div style={{ position: 'relative', display: 'inline-block' }}>
@@ -19,7 +19,7 @@ export default function GradientIcon({ children, isActive = false, ...props }) {
       {React.cloneElement(children, {
         ...props,
         style: { 
-          fill: isActive ? (isDark ? "#fff" : "#000") : `url(#${gradientId})`,
+          fill: isActive ? "#000" : `url(#${gradientId})`,
           ...props.style 
         }
       })}
