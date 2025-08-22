@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    local("Poppins"),
+    url("/fonts/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    local("Poppins"),
+    url("/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    local("Poppins"),
+    url("/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    local("Poppins"),
+    url("/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    local("Poppins"),
+    url("/fonts/Poppins-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    local("Poppins"),
+    url("/fonts/Poppins-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-pink: #FF1168;
+  --color-black: #111625;
+  --color-purple: #341931;
+  --color-gradientstart: #EE0979;
+  --color-gradientend: #FF6A00;
+}
+
+@layer utilities {
+
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+}
