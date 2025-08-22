@@ -81,13 +81,13 @@ export default function Footer() {
     const shouldUseDark = savedTheme ? JSON.parse(savedTheme) : prefersDark;
     
     setIsDarkMode(shouldUseDark);
-    document.documentElement.classList.toggle('dark', shouldUseDark);
+    // document.documentElement.classList.toggle('dark', shouldUseDark);
   }, []);
 
   const toggleDarkMode = () => {
     const newDarkMode = !isDarkMode;
     setIsDarkMode(newDarkMode);
-    document.documentElement.classList.toggle('dark', newDarkMode);
+    // document.documentElement.classList.toggle('dark', newDarkMode);
     localStorage.setItem('darkMode', JSON.stringify(newDarkMode));
   };
 
